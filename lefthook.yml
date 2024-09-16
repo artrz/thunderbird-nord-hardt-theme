@@ -1,0 +1,14 @@
+#   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
+
+pre-commit:
+  parallel: true
+  commands:
+    stylelint:
+      glob: "*.{scss}"
+      run: npx stylelint {staged_files}
+
+pre-push:
+  commands:
+    packages-audit:
+      tags: security
+      run: npm audit

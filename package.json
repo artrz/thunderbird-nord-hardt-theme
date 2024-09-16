@@ -1,0 +1,39 @@
+{
+    "name": "nord-hardt-theme",
+    "displayName": "Nord Hardt",
+    "description": "An arctic, north-bluish dark, clean and elegant color scheme for Thunderbird 128+.",
+    "version": "0.1.0",
+    "license": "GPL-3.0",
+    "author": {
+        "name": "Arturo Rodríguez",
+        "url": "https://github.com/artrz"
+    },
+    "homepage": "https://github.com/artrz/thunderbird-nord-hardt-theme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/artrz/thunderbird-nord-hardt-theme.git"
+    },
+    "keywords": [
+        "thunderbird",
+        "theme",
+        "nord",
+        "dark",
+        "hardt"
+    ],
+    "type": "module",
+    "scripts": {
+        "init": "lefthook install",
+        "init-theme": "npx tbtb init",
+        "build": "node src/build.js",
+        "bump": "npx @favware/cliff-jumper",
+        "debump": "git reset --soft HEAD~1 ; git tag --delete",
+        "publish": "git push origin main && git push --tags"
+    },
+    "devDependencies": {
+        "lefthook": "^1.7.15",
+        "stylelint": "^16.9.0",
+        "stylelint-config-standard": "^36.0.1",
+        "stylelint-config-standard-scss": "^13.1.0",
+        "thunderbird-theme-builder": "github:artrz/thunderbird-theme-builder"
+    }
+}
