@@ -27,7 +27,7 @@
         "build": "node src/build.js",
         "bump": "npx @favware/cliff-jumper",
         "debump": "git reset --soft HEAD~1 ; git tag --delete",
-        "publish": "git push origin main && git push --tags"
+        "publish": "git push origin main && git push --tags && npm run build"
     },
     "devDependencies": {
         "@favware/cliff-jumper": "^4.1.0",
