@@ -30,6 +30,7 @@
         "publish": "git push origin main && git push --tags"
     },
     "devDependencies": {
+        "@favware/cliff-jumper": "^4.1.0",
         "lefthook": "^1.7.15",
         "stylelint": "^16.9.0",
         "stylelint-config-standard": "^36.0.1",
