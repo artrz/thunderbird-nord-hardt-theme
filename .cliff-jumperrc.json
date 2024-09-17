@@ -1,0 +1,11 @@
+{
+    "$schema": "./node_modules/@favware/cliff-jumper/assets/cliff-jumper.schema.json",
+    "githubRepo": "auto",
+    "githubToken": "none",
+    "install": true,
+    "name": "nord-hardt-theme",
+    "org": "artrz",
+    "packagePath": ".",
+    "tagTemplate": "v{{new-version}}",
+    "verbose": true
+}
