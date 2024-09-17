@@ -1,0 +1,110 @@
+/*********************************************************************************
+IMPROVED UI, NOT COLOR RELATED
+*********************************************************************************/
+
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';
+
+* {
+  scrollbar-width: thin;
+}
+
+:root {
+  --font1: 'Montserrat';
+}
+
+body {
+  font-family: var(--font1), sans-serif !important;
+  font-optical-sizing: auto !important;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// INBOX
+////////////////////////////////////////////////////////////////////////////////
+
+#threadPane {
+  border-radius: 5px;
+}
+
+// No bold fonts on cards view rows
+#threadTree tbody tr * {
+  font-weight: 200 !important;
+}
+
+.thread-card-container {
+  margin-left: .5rem; // so there's a space between the email data and the new email indicator.
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// AGENDA
+////////////////////////////////////////////////////////////////////////////////
+
+.agenda-listitem-details {
+  border-radius: 4px !important;
+  font-weight: 500;
+}
+
+/* current (day) date */
+#datevalue-label {
+  color: var(--nord_14) !important;
+}
+
+.agenda-date-header {
+  color: var(--nord_06) !important;
+  background-color: transparent !important;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// ADDRESS BOOK
+////////////////////////////////////////////////////////////////////////////////
+
+/* third pane (user details) */
+
+#detailsBody section {
+  border-radius: 4px !important;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// CALENDAR
+////////////////////////////////////////////////////////////////////////////////
+
+/* MINI MONTH */
+.minimonth-day:hover,
+.minimonth-day[selected="true"],
+.minimonth-day[today="true"] {
+  border-radius: 4px !important;
+}
+
+// mini-calendar, make it auto expand/shrink
+#calMinimonthBox {
+  width: 100%;
+  margin: 0 !important;
+  padding: var(--calendar-side-panel-minimonth-margin);
+}
+
+#calMinimonth {
+  width: 100%;
+}
+
+// make min-calendar top buttons thinner
+.minimonth-nav-btn:not(.today-button) {
+  width: 1.5rem !important;
+}
+
+/* TASKS */
+.calendar-color-box {
+  box-shadow: none !important;
+  border-radius: 4px !important;
+}
+
+.event-name-input,
+.event-name-label {
+  font-weight: 500;
+}
+
+.calendar-category-box {
+  width: 4px !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+  inset: 0 auto 0 0 !important;
+}
