@@ -1,12 +1,5 @@
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';
-
-:root {
-  --font1: 'Montserrat';
-}
-
 * {
   scrollbar-color: var(--nord_between_2_n_9) var(--nord_00);
-  scrollbar-width: thin;
 }
 
 body {
@@ -207,21 +200,8 @@ tr[data-properties~="new"] td .subject-line img {
 calendar-minimonth {
   background-color: var(--nord_01) !important;
   border-color: transparent !important;
-}
 
-.minimonth-week {
-  color: var(--nord_08) !important;
-  border: 1px solid var(--nord_02) !important;
-  background-color: var(--nord_02) !important;
-}
-
-/* date */
-.calendar-month-day-box-date-label[relation="today"] {
-  color: var(--viewTodayLabelColor) !important;
-}
-
-/* unable to define from theme */
-calendar-minimonth {
+  /* unable to define from theme */
   --mmMainColor: var(--sidebar-text-color);
   // --mmMainBackground: var(--nord_01); // not working
   --mmMainBorderColor: var(--nord_01);
@@ -253,6 +233,17 @@ calendar-minimonth {
   --mmBoxItemPadding: 0px;
   --mmDayPadding: 0px;
   /* styling: make minimap smaller */
+}
+
+.minimonth-week {
+  color: var(--nord_08) !important;
+  border: 1px solid var(--nord_02) !important;
+  background-color: var(--nord_02) !important;
+}
+
+/* date */
+.calendar-month-day-box-date-label[relation="today"] {
+  color: var(--viewTodayLabelColor) !important;
 }
 
 // mini-month navitagion top buttons (month, year)
@@ -306,105 +297,4 @@ calendar-event-box[selected="true"].calendar-color-box,
 calendar-editable-item[selected="true"].calendar-color-box {
   color: var(--nord_00) !important;
   background-color: var(--nord_13) !important;
-}
-
-/*********************************************************************************
-IMPROVED UI, NOT COLOR RELATED
-*********************************************************************************/
-
-body {
-  font-family: var(--font1), sans-serif !important;
-  font-optical-sizing: auto !important;
-}
-
-////////////////////////////////////////////////////////////////////////////////
-// INBOX
-////////////////////////////////////////////////////////////////////////////////
-
-#threadPane {
-  border-radius: 5px;
-}
-
-// No bold fonts on cards view rows
-#threadTree tbody tr * {
-  font-weight: 200 !important;
-}
-
-.thread-card-container {
-  margin-left: .5rem; // so there's a space between the email data and the new email indicator.
-}
-
-////////////////////////////////////////////////////////////////////////////////
-// AGENDA
-////////////////////////////////////////////////////////////////////////////////
-
-.agenda-listitem-details {
-  border-radius: 4px !important;
-  font-weight: 500;
-}
-
-/* current (day) date */
-#datevalue-label {
-  color: var(--nord_14) !important;
-}
-
-.agenda-date-header {
-  color: var(--nord_06) !important;
-  background-color: transparent !important;
-}
-
-////////////////////////////////////////////////////////////////////////////////
-// ADDRESS BOOK
-////////////////////////////////////////////////////////////////////////////////
-
-/* third pane (user details) */
-
-#detailsBody section {
-  border-radius: 4px !important;
-}
-
-
-////////////////////////////////////////////////////////////////////////////////
-// CALENDAR
-////////////////////////////////////////////////////////////////////////////////
-
-/* MINI MONTH */
-.minimonth-day:hover,
-.minimonth-day[selected="true"],
-.minimonth-day[today="true"] {
-  border-radius: 4px !important;
-}
-
-// mini-calendar, make it auto expand/shrink
-#calMinimonthBox {
-  width: 100%;
-  margin: 0 !important;
-  padding: var(--calendar-side-panel-minimonth-margin);
-}
-
-#calMinimonth {
-  width: 100%;
-}
-
-// make min-calendar top buttons thinner
-.minimonth-nav-btn:not(.today-button) {
-  width: 1.5rem !important;
-}
-
-/* TASKS */
-.calendar-color-box {
-  box-shadow: none !important;
-  border-radius: 4px !important;
-}
-
-.event-name-input,
-.event-name-label {
-  font-weight: 500;
-}
-
-.calendar-category-box {
-  width: 4px !important;
-  height: 100% !important;
-  border-radius: 0 !important;
-  inset: 0 auto 0 0 !important;
 }

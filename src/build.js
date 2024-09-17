@@ -3,6 +3,6 @@ import theme from './themeConfig.js';
 
 build(theme, {
     thunderbirdMinVersion: '128.0',
-    stylesheet: 'nord-hardt.scss',
+    stylesPath: 'styles',
     assetsDir: 'src/assets',
 });
