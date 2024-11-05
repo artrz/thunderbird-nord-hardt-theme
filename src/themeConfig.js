@@ -140,6 +140,7 @@ export default {
 
         '--viewHighlightBorderColor': 'nord_03', // selected day
         '--viewDayBoxSelectedBackground': 'nord_03', // selected day
+        '--viewTodayBackground': 'nord_between_2_n_9',
         '--viewTodayLabelColor': 'nord_08',
         '--viewTodayLabelBackground': 'nord_00',
     },
