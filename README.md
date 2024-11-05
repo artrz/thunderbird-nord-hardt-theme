@@ -15,6 +15,8 @@ Theme generated using the [Thunderbird Theme Builder](https://github.com/artrz/t
  1. [Download the latest release](https://github.com/artrz/thunderbird-nord-hardt-theme/releases) or [build it your self](#build).
  2. Install it by clicking the cog in the Themes configuration section and selecting 'Install Add-on From File...'.
 
+![Manual Install](resources/4-install-manual.png)
+
 ## Build
 
 Install the required dependencies:

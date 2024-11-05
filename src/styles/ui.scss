@@ -91,6 +91,13 @@ body {
   width: 1.5rem !important;
 }
 
+// Make monthly calendar days rounded
+.monthtable calendar-month-day-box,
+.monthtable th>* {
+  margin: 3px;
+  border-radius: 4px;
+}
+
 /* TASKS */
 .calendar-color-box {
   box-shadow: none !important;

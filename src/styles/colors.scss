@@ -114,11 +114,6 @@ tr[data-properties~="new"] td .subject-line img {
   color: #74818e !important;
 }
 
-[is="tree-view-table-body"]>tr {
-  // remove any bg color from tr to apply to td
-  background-color: transparent !important;
-}
-
 // keep NEW color even when selecting the row
 #threadTree [data-properties~="new"] .thread-card-container :is(.subject, .date) {
   color: var(--new-folder-color) !important;
@@ -246,7 +241,7 @@ calendar-minimonth {
   color: var(--viewTodayLabelColor) !important;
 }
 
-// mini-month navitagion top buttons (month, year)
+// mini-month navigation top buttons (month, year)
 .minimonth-nav-section {
   background-color: transparent !important;
 }
@@ -268,33 +263,40 @@ calendar-minimonth {
   border-color: var(--nord_03) !important;
 }
 
-// Make monthly calendar days rounded
-.monthtable calendar-month-day-box,
-.monthtable th>* {
-  border-color: transparent;
-  margin: 3px;
-  background: var(--nord_01);
-  border-radius: 4px;
-}
-
-.monthtable calendar-month-day-box.calendar-month-day-box-day-off,
-.monthtable th>*.calendar-month-day-box-day-off {
-  background: var(--viewWeekendBackground); // ensure days off are colored as original rule has less precedence than regular day specified previously.
-}
-
-.monthtable calendar-month-day-box.calendar-month-day-box-day-off[selected="true"] {
-  background-color: var(--viewDayBoxSelectedBackground);
-}
-
 // Remove a weird border at the right & bottom.
 .monthtable {
   border: 0;
 }
 
-// selected event in calendar day
-calendar-month-day-box-item[selected="true"].calendar-color-box,
-calendar-event-box[selected="true"].calendar-color-box,
-calendar-editable-item[selected="true"].calendar-color-box {
-  color: var(--nord_00) !important;
-  background-color: var(--nord_13) !important;
+// Make monthly calendar days rounded
+.monthtable calendar-month-day-box,
+.monthtable th>* {
+  border-color: transparent;
+  background: var(--nord_01);
+}
+
+.monthtable .calendar-month-day-box-day-off,
+.monthtable th>*.calendar-month-day-box-day-off {
+  background: var(--viewWeekendBackground); // ensure days off are colored as original rule has less precedence than regular day specified previously.
+}
+
+.monthtable calendar-month-day-box.calendar-month-day-box-current-month[selected="true"],
+.monthtable calendar-month-day-box.calendar-month-day-box-day-off[selected="true"],
+.monthtable calendar-month-day-box.calendar-month-day-box-other-month[selected="true"] {
+  background-color: var(--viewDayBoxSelectedBackground);
+  border: 1px solid var(--nord_09);
+}
+
+.monthtable calendar-month-day-box.calendar-month-day-box-current-month[relation="today"],
+.monthtable calendar-month-day-box.calendar-month-day-box-day-off[relation="today"],
+.monthtable calendar-month-day-box.calendar-month-day-box-other-month[relation="today"] {
+  background-color: var(--viewTodayBackground);
+}
+
+// Selected event in calendar day. `calendar-month-day-box` is added to increment specificity.calendar-month-day-box calendar-month-day-box-item[selected="true"].calendar-color-box,
+calendar-month-day-box calendar-month-day-box-item[selected="true"].calendar-color-box,
+calendar-month-day-box calendar-event-box[selected="true"].calendar-color-box,
+calendar-month-day-box calendar-editable-item[selected="true"].calendar-color-box {
+  color: var(--nord_03) !important;
+  background-color: var(--nord_04) !important;
 }
