@@ -114,11 +114,6 @@ tr[data-properties~="new"] td .subject-line img {
   color: #74818e !important;
 }
 
-[is="tree-view-table-body"]>tr {
-  // remove any bg color from tr to apply to td
-  background-color: transparent !important;
-}
-
 // keep NEW color even when selecting the row
 #threadTree [data-properties~="new"] .thread-card-container :is(.subject, .date) {
   color: var(--new-folder-color) !important;
