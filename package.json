@@ -30,11 +30,11 @@
         "publish": "git push origin main && git push --tags && npm run build"
     },
     "devDependencies": {
-        "@favware/cliff-jumper": "^5.0.0",
-        "lefthook": "^1.10.1",
+        "@favware/cliff-jumper": "^6.0.0",
+        "lefthook": "^1.10.9",
         "stylelint": "^16.13.2",
-        "stylelint-config-standard": "^36.0.1",
-        "stylelint-config-standard-scss": "^13.1.0",
-        "thunderbird-theme-builder": "github:artrz/thunderbird-theme-builder#semver:^0.4.0"
+        "stylelint-config-standard": "^37.0.0",
+        "stylelint-config-standard-scss": "^14.0.0",
+        "thunderbird-theme-builder": "github:artrz/thunderbird-theme-builder#semver:^0.5.0"
     }
 }
