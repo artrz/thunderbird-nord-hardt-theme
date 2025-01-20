@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2025-01-20
+
+### Changed
+
+- Bump lefthook from 1.8.2 to 1.10.1 (#16)
+- Bump stylelint from 16.10.0 to 16.13.2 (#17)
+- Update dependencies
+
+### Fixed
+
+- Set max TB supported version to 129
+
+[https://github.com/artrz/nord-hardt-theme/compare/v0.2.0..v0.3.0](https://github.com/artrz/nord-hardt-theme/compare/v0.2.0..v0.3.0)
+
 ## [0.2.0] - 2024-11-05
 
 ### Added
