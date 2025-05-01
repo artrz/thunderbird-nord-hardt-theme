@@ -33,7 +33,7 @@
         "@favware/cliff-jumper": "^6.0.0",
         "lefthook": "^1.10.9",
         "stylelint": "^16.13.2",
-        "stylelint-config-standard": "^37.0.0",
+        "stylelint-config-standard": "^38.0.0",
         "stylelint-config-standard-scss": "^14.0.0",
         "thunderbird-theme-builder": "github:artrz/thunderbird-theme-builder#semver:^0.5.0"
     }
