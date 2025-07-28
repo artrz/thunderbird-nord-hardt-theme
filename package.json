@@ -31,10 +31,10 @@
     },
     "devDependencies": {
         "@favware/cliff-jumper": "^6.0.0",
-        "lefthook": "^1.11.12",
-        "stylelint": "^16.13.2",
+        "lefthook": "^1.12.2",
+        "stylelint": "^16.22.0",
         "stylelint-config-standard": "^38.0.0",
-        "stylelint-config-standard-scss": "^14.0.0",
+        "stylelint-config-standard-scss": "^15.0.1",
         "thunderbird-theme-builder": "github:artrz/thunderbird-theme-builder#semver:^0.5.0"
     }
 }
