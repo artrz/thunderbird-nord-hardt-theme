@@ -41,11 +41,10 @@ See the [changelog](./CHANGELOG.md).
 
 First of, thanks for your interest in helping out!
 
-Lefthook is configured to automatically perform tasks on pre-commit and pre-push hooks. [Commitlint](https://commitlint.js.org/) is integrated as a github workflow to ensure consistent commit messages on PRs.
+Lefthook is configured to automatically perform tasks on pre-commit and pre-push hooks. To install the git hooks in your repo clone run `npm run prepare`, this way, [the configured hooks](./lefthook.yml) will be automatically executed.
 
-To install the git hooks in your repo clone run `npm run prepare`, this way, [the configured hooks](./lefthook.yml) will be automatically executed.
+There's also a [github workflow](./.github/workflows/semantic-pull-request.yml) to ensure consistent commit messages on PRs using [Commitlint](https://commitlint.js.org/).
 
-The PR commit messages will be linted using the default conventional [configuration](./.github/workflows/semantic-pull-request.yml).
 
 ## Versioning and releasing
 
