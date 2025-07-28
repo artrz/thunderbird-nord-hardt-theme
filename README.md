@@ -58,6 +58,8 @@ uses the commit messages to define the version change.
 
 ## Versioning and releasing
 
+Once you're in the main branch with all changes merged and ready to release a new version:
+
 Use `npm run bump` to increment the version and update the changelog and commit the changes. Internally,
 `bump` uses cliff-jumper to automatize the process.
 
