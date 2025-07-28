@@ -41,16 +41,30 @@ See the [changelog](./CHANGELOG.md).
 
 First of, thanks for your interest in helping out!
 
-Lefthook is configured to automatically perform tasks on pre-commit and pre-push hooks. To install the git hooks in your repo clone run `npm run prepare`, this way, [the configured hooks](./lefthook.yml) will be automatically executed.
+There are a set of tool configured to ease development:
+ - Git hooks configured via [Lefthook](https://lefthook.dev/)
+ - Github PR title linted via [Commitlint](https://commitlint.js.org/)
+ - Versioning managed via [cliff-jumper](https://github.com/favware/cliff-jumper)
 
-There's also a [github workflow](./.github/workflows/semantic-pull-request.yml) to ensure consistent commit messages on PRs using [Commitlint](https://commitlint.js.org/).
+Lefthook is configured to automatically perform tasks on pre-commit and pre-push hooks.
+To install the git hooks in your cloned repo run `npm run prepare`.
+This way, [the configured hooks](./lefthook.yml) will be automatically executed.
+
+When creating a PR, the title will be automatically linted with a [github workflow](./.github/workflows/semantic-pull-request.yml)
+to ensure it's conformant with the [conventional commit structure](https://www.conventionalcommits.org/en/v1.0.0/).
+Failing to comply wont let the PR to merge. This is important because the versioning tool
+uses the commit messages to define the version change.
 
 
 ## Versioning and releasing
 
-Use `npm run bump` to increment the version and update the changelog and commit the changes.
-To "undo" a bump, use `npm run debump [THE GENERATED TAG]` which undoes the commit and deletes the tag.
-Finally, run `npm run publish` to push the changes along with the new tag and build the theme so it's ready to be uploaded.
+Use `npm run bump` to increment the version and update the changelog and commit the changes. Internally,
+`bump` uses cliff-jumper to automatize the process.
+
+To undo a bump, use `npm run debump [THE GENERATED TAG]` which undoes the commit and deletes the tag.
+
+Finally, run `npm run publish` to push the changes along with the new tag.
+
 
 ## License
 
