@@ -47,11 +47,11 @@ To install the git hooks in your repo clone run `npm run prepare`, this way, [th
 
 The PR commit messages will be linted using the default conventional [configuration](./.github/workflows/semantic-pull-request.yml).
 
-## Versioning
+## Versioning and releasing
 
 Use `npm run bump` to increment the version and update the changelog and commit the changes.
-To "undo" a bump, use `npm run debump [THE GENERATED TAG]` which undoes the commit and delete the tag.
-Finally, run `npm run publish` to push the changes along the new tag and build the theme so it's ready to be uploaded.
+To "undo" a bump, use `npm run debump [THE GENERATED TAG]` which undoes the commit and deletes the tag.
+Finally, run `npm run publish` to push the changes along with the new tag and build the theme so it's ready to be uploaded.
 
 ## License
 
