@@ -124,6 +124,8 @@ export default {
         '--thread-pane-unread-fill': 'nord_08', // unread
         '--thread-pane-unread-stroke': 'nord_08', // unread
 
+        '--tree-pane-background': 'nord_00', // background where card is displayed, not the card's background (card view)
+
         // Account - manage
         '--accounts-bg-color': 'nord_01',
         '--button-hover-background-color': 'nord_02', // text button hover
