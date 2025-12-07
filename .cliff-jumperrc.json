@@ -7,5 +7,6 @@
     "org": "artrz",
     "packagePath": ".",
     "tagTemplate": "v{{new-version}}",
-    "verbose": true
+    "verbose": true,
+    "commitMessageTemplate": "chore(release): {{new-version}}"
 }
