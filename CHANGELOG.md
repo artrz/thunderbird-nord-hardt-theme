@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2025-12-07
+
+### Changed
+
+- Bump stylelint-config-standard from 37.0.0 to 38.0.0 (#26)
+- Bump lefthook from 1.10.9 to 1.11.12 (#24)
+- Update dependencies, readme and ease dependabot (#28)
+- Bump thunderbird-theme-builder to 0.6.0
+- Set max supported tb version to v140.5
+- Update cliff-jumper's release message
+
+### Fixed
+
+- Set correct background for card container (card view)
+
+[https://github.com/artrz/nord-hardt-theme/compare/v0.3.0..v0.4.0](https://github.com/artrz/nord-hardt-theme/compare/v0.3.0..v0.4.0)
+
 ## [0.3.0] - 2025-01-20
 
 ### Changed
