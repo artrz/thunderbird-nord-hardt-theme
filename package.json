@@ -35,6 +35,6 @@
         "stylelint": "^17.15.0",
         "stylelint-config-standard": "^40.0.0",
         "stylelint-config-standard-scss": "^17.0.0",
-        "thunderbird-theme-builder": "github:artrz/thunderbird-theme-builder#semver:v0.7.0"
+        "thunderbird-theme-builder": "github:artrz/thunderbird-theme-builder#semver:v0.8.0"
     }
 }
